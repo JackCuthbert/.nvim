@@ -19,6 +19,7 @@ return require('packer').startup(function()
 
     -- UX
     use {'echasnovski/mini.nvim', branch = 'stable'}
+    use 'tpope/vim-surround'
 
     -- Completion engine
     use 'neovim/nvim-lspconfig'

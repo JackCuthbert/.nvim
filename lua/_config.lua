@@ -84,7 +84,13 @@ if present then
 end
 
 -- Surround
-local present, surround = pcall(require, 'mini.surround')
+-- local present, surround = pcall(require, 'mini.surround')
+-- if present then
+--     surround.setup {}
+-- end
+
+-- Comment
+local present, comment = pcall(require, 'mini.comment')
 if present then
-    surround.setup {}
+    comment.setup {}
 end
