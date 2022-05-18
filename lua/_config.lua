@@ -38,7 +38,12 @@ if present then
         disable_netrw = true,
         hijack_cursor = true,
         update_cwd = true,
-        update_to_buf_dir = {auto_open = false}
+        update_to_buf_dir = {auto_open = false},
+        actions = {
+            open_file = {
+                quit_on_open = true
+            }
+        }
     }
     vim.g.nvim_tree_indent_markers = 1
 end
@@ -75,7 +80,9 @@ end
 -- Sessions
 local present, sessions = pcall(require, 'mini.sessions')
 if present then
-    sessions.setup {autoread = true}
+    sessions.setup {
+        autoread = true
+    }
 end
 
 -- Start screen

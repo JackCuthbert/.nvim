@@ -6,7 +6,6 @@ vim.g.airline_section_b = '' -- remove the VCS part
 vim.g.airline_section_y = '' -- remove the filetype part
 vim.g.airline_skip_empty_sections = 1 -- remove separators for empty sections
 vim.g.cursorline_timeout = 200 -- reduce delay to show line
-vim.g.nvim_tree_quit_on_open = 1 -- close nvimtree when opening files
 
 -- General setup
 vim.o.backupcopy = 'yes' -- support hot-reloading in parcel/webpack
