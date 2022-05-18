@@ -48,6 +48,7 @@ local present, onedark = pcall(require, 'onedark')
 if present then
     onedark.setup {
         style = 'dark',
+        transparent = true,
         code_style = {comments = 'italic', keywords = 'none', functions = 'bold', strings = 'none', variables = 'none'}
     }
     require('onedark').load()
@@ -82,12 +83,6 @@ local present, starter = pcall(require, 'mini.starter')
 if present then
     starter.setup {}
 end
-
--- Surround
--- local present, surround = pcall(require, 'mini.surround')
--- if present then
---     surround.setup {}
--- end
 
 -- Comment
 local present, comment = pcall(require, 'mini.comment')
