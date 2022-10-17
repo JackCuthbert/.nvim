@@ -10,7 +10,7 @@ return require('packer').startup(function()
     use 'wbthomason/packer.nvim'
 
     -- UI & Syntax
-    use 'navarasu/onedark.nvim'
+    use 'projekt0n/github-nvim-theme'
     use 'nvim-treesitter/nvim-treesitter'
     use {'nvim-telescope/telescope.nvim', requires = {'nvim-lua/plenary.nvim'}}
     use {'lewis6991/gitsigns.nvim', requires = {'nvim-lua/plenary.nvim'}}

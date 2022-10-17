@@ -29,3 +29,4 @@ vim.o.splitright = true
 
 -- Improve invisible character display
 vim.o.listchars = 'tab:▸ ,extends:›,precedes:‹,nbsp:⎵'
+vim.o.fillchars = 'vert:│'

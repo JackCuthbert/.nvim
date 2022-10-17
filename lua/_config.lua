@@ -38,7 +38,7 @@ if present then
         disable_netrw = true,
         hijack_cursor = true,
         update_cwd = true,
-        update_to_buf_dir = {auto_open = false},
+        hijack_directories = {auto_open = false},
         actions = {
             open_file = {
                 quit_on_open = true
@@ -48,15 +48,14 @@ if present then
     vim.g.nvim_tree_indent_markers = 1
 end
 
--- Onedark
-local present, onedark = pcall(require, 'onedark')
+-- GitHub theme
+local present, github_theme = pcall(require, 'github-theme')
 if present then
-    onedark.setup {
-        style = 'dark',
-        transparent = true,
-        code_style = {comments = 'italic', keywords = 'none', functions = 'bold', strings = 'none', variables = 'none'}
-    }
-    require('onedark').load()
+    github_theme.setup({
+        theme_style = "dark_default",
+        comment_style = "NONE",
+        dark_sidebar = false
+    })
 end
 
 -- lspkind (LSP/cmp icons)
@@ -81,7 +80,7 @@ end
 local present, sessions = pcall(require, 'mini.sessions')
 if present then
     sessions.setup {
-        autoread = true
+        directory = '~/.local/share/nvim/session',
     }
 end
 
